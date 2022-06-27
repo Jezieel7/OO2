@@ -21,7 +21,7 @@ public class Dispositivo {
 		this.ringer.ring();
 	}
 	
-	public void configurarCRC(Calculator calculator) {
+	public void configurarCRC(Calculator crcCalculator) {
 		this.crcCalculator = crcCalculator;
 	}
 	

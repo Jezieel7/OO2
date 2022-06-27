@@ -1,6 +1,5 @@
 package tp5Ejercicio1Spotify;
 
-import java.util.Comparator;
 import java.util.List;
 
 public class Album {

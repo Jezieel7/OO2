@@ -17,4 +17,16 @@ public class Tweet {
 		return this.texto;
 	}
 	
+	public void setTexto(String texto) {
+		this.texto = texto;
+	}
+
+	public Tweet getOriginal() {
+		return original;
+	}
+
+	public void setOriginal(Tweet original) {
+		this.original = original;
+	}
+	
 }

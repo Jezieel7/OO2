@@ -4,14 +4,14 @@ public class Temporario extends Empleado{
 
 	private double horasTrabajadas;
 	
-	public Temporario(double hs) {
-		this.horasTrabajadas= hs;
+	public Temporario(double horasTrabajadas) {
+		this.horasTrabajadas = horasTrabajadas;
 	}
 	
 	@Override
 	public double sueldoBasico() {
 		
-		return super.sueldoBasico() + 300*this.horasTrabajadas;
+		return super.sueldoBasico() + (300 * this.horasTrabajadas);
 	}
 
 }

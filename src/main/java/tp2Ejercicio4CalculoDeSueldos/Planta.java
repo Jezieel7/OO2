@@ -2,10 +2,10 @@ package tp2Ejercicio4CalculoDeSueldos;
 
 public class Planta extends Empleado{
 
-	private int antiguo;
+	private int antiguedad;
 	
-	public Planta (int ant) {
-		this.antiguo= ant;
+	public Planta (int antiguedad) {
+		this.antiguedad = antiguedad;
 	}
 	
 	@Override
@@ -14,7 +14,7 @@ public class Planta extends Empleado{
 	}
 	@Override
 	public double sueldoAdicional() {
-		return super.sueldoAdicional() + 2000*this.antiguo;
+		return super.sueldoAdicional() + (2000 * this.antiguedad);
 	}
 	
 	

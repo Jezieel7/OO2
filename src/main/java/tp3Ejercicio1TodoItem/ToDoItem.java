@@ -59,5 +59,15 @@ public class ToDoItem {
 	public void setStartToDo(LocalDate startToDo) {
 		this.startToDo = startToDo;
 	}
+
+	public String getComment() {
+		return comment;
+	}
+
+	public void setComment(String comment) {
+		this.comment = comment;
+	}
+	
+	
 	
 }

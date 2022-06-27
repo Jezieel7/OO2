@@ -2,7 +2,6 @@ package tp3Ejercicio4DecodificadorPeliculas;
 
 import java.time.LocalDate;
 import java.util.List;
-import java.util.concurrent.TimeUnit;
 
 public class Pelicula {
     
@@ -19,9 +18,20 @@ public class Pelicula {
         this.asignarSimilaridad();
     }
 
-    public double getPuntaje(){
-        return this.puntaje;
+    public String getTitulo() {
+		return titulo;
+	}
 
+
+
+	public void setTitulo(String titulo) {
+		this.titulo = titulo;
+	}
+
+
+
+	public double getPuntaje(){
+        return this.puntaje;
     } 
 
     public LocalDate getFechaEstreno(){
@@ -32,18 +42,12 @@ public class Pelicula {
         return this.pelSimimlares;
     }
 
-    //itero listas de peliculas simialres y asigno la similaridad a estas
     private void añadirSimilar(Pelicula pel){
         this.pelSimimlares.add(pel);
     }
 
     private void asignarSimilaridad(){
-
         this.pelSimimlares.stream().forEach(c -> añadirSimilar(this));
-
     }
-
-
-
 
 }

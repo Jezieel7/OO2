@@ -2,15 +2,15 @@ package tp2Ejercicio4CalculoDeSueldos;
 
 public abstract class Empleado {
 	
-	private boolean esposado;
-	private int niñes;
+	private boolean casado;
+	private int hijos;
 	
-	public void setEsposado(boolean esp) {
-		this.esposado = esp;
+	public void setCasado(boolean casado) {
+		this.casado = casado;
 	}
 	
-	public void setNiñes(int nin) {
-		this.niñes= nin;
+	public void setHijos(int hijos) {
+		this.hijos= hijos;
 	}
 	
 	public double sueldo() {
@@ -24,10 +24,10 @@ public abstract class Empleado {
 	}
 	
 	public double sueldoAdicional() {
-		return (esposado)? 5000 + 2000*this.niñes : 2000*this.niñes;
+		return (this.casado) ? (5000 + 2000  * this.hijos) : (2000 * this.hijos);
 	}
 	
 	public double sueldoDescuento() {
-		return this.sueldoBasico()*0.13 + this.sueldoAdicional()* 0.05;
+		return (this.sueldoBasico() * 0.13) + (this.sueldoAdicional() * 0.05);
 	}
 }

@@ -35,7 +35,6 @@ public class TopografiaTest {
 		topografias[3] = this.mixta4;
 		this.mixta1 = new Mixta(topografias);
 		this.mixta2 = new Mixta(topografias);
-		
 		this.mixta3 = new Mixta(topografias2);
 	}
 	

@@ -18,9 +18,9 @@ public class EmpleadoTest {
 	void setUp() throws Exception {
 		temporario = new Temporario(300);
 		temporario2 = new Temporario(1500);
-		pasante= new Pasante(10);
-		pasante2= new Pasante(0);
-		planta=  new Planta(100);
+		pasante = new Pasante(10);
+		pasante2 = new Pasante(0);
+		planta =  new Planta(100);
 		planta2 = new Planta(5);
 	}
     @Test
@@ -34,16 +34,16 @@ public class EmpleadoTest {
     public void testSueldoAdicional() {
         
     	assertEquals(0, temporario.sueldoAdicional());
-        temporario.setEsposado(true);
-        temporario.setNiñes(5);
+        temporario.setCasado(true);
+        temporario.setHijos(5);
         assertEquals(15000, temporario.sueldoAdicional());
         
     	assertEquals(20000, pasante.sueldoAdicional());
     	assertEquals(0, pasante2.sueldoAdicional());
         
         assertEquals(200000, planta.sueldoAdicional());
-        planta2.setEsposado(true);
-        planta2.setNiñes(4);
+        planta2.setCasado(true);
+        planta2.setHijos(4);
         assertEquals(23000, planta2.sueldoAdicional());
     }
 	
