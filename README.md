@@ -10,4 +10,4 @@ Nota 3: Los test te los debo.
 
 Nota 4: Perdi la practica 5 y despues me dio pereza volver a hacerla.
 
-Nota 3: POR FAVOR, en caso de corregir algún ejercicio, pasar el código para que pueda verlo y corregirlo en el repositorio, para que al final, queden todos los ejercicios correctamente desarrollados.
+Nota 5: POR FAVOR, en caso de corregir algún ejercicio, pasar el código para que pueda verlo y corregirlo en el repositorio, para que al final, queden todos los ejercicios correctamente desarrollados.
